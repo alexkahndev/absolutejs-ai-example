@@ -1,0 +1,10 @@
+node_modules/
+dist/
+build/
+.absolutejs/
+.cache/
+bun.lock
+*.log
+.DS_Store
+**/*.env
+.claude/

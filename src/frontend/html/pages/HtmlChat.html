@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>AbsoluteJS AI Chat - HTML</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../../styles/indexes/html-chat.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="/">React</a>
+      <a href="/svelte">Svelte</a>
+      <a href="/vue">Vue</a>
+      <a href="/angular">Angular</a>
+      <a class="active" href="/html">HTML</a>
+      <a href="/htmx">HTMX</a>
+    </header>
+
+    <div class="chat-container">
+      <div class="provider-selector">
+        <button class="active" data-provider="anthropic" type="button">anthropic</button>
+        <button data-provider="openai" type="button">openai</button>
+        <button data-provider="ollama" type="button">ollama</button>
+      </div>
+
+      <div class="messages" id="messages">
+        <div class="empty-state">
+          Send a message to start chatting. Try "What's the weather in Tokyo?"
+        </div>
+      </div>
+
+      <form class="chat-form" id="chat-form">
+        <input autocomplete="off" name="input" placeholder="Ask anthropic anything..." />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="../scripts/chat.ts"></script>
+  </body>
+</html>
